@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Notes from './components/Notes'
 import ViewNotes from './components/ViewNotes'
 import Home from './components/Home'
+import About from './components/About'
 
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
         <ViewNotes />
         </div>
       },
+      {
+        path:'/about',
+        element: <div><Navbar/> <About/></div>
+      }
     ]
   )
 

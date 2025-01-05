@@ -21,7 +21,7 @@ export const pasteSlice = createSlice({
      toast.success('Notes Created Successfully')
      
     },
-    updateToPastes: (state,action) => {
+    updatePastes: (state,action) => {
       const paste = action.payload;
       const index = state.pastes.findIndex((item)=>item._id === paste._id);
 
@@ -51,6 +51,6 @@ export const pasteSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { addToPastes, updateToPastes, resetAllPastes,removeFromPastes } = pasteSlice.actions
+export const { addToPastes, updatePastes, resetAllPastes,removeFromPastes } = pasteSlice.actions
 
 export default pasteSlice.reducer
